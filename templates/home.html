@@ -1,8 +1,15 @@
 {% extends 'base.html' %}
-<!-- {% load static %} -->
+{% load static %}
 {% block content%}
-<div class="text-center">
+
+<div class="container">
+    <div class="text-center">
+        <div class="header">
+            <h1>Bengali Bon Appétit</h1>
+            <p>Experience the Culinary Delights of Bengal</p>
+        </div>
+    </div>
     {{block.super}}
 </div>
-<h1 class="text-center">Home page</h1>
+
 {% endblock %}

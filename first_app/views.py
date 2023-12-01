@@ -47,5 +47,5 @@ def index(request):
     return render(request, 'first_app/index.html', {'meals': meals})
 
 
-def about(request):
-    return render(request, 'first_app/about.html')
+# def about(request):
+#     return render(request, 'first_app/about.html')
