@@ -22,5 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
     path('mealdb/', include('first_app.urls')),
-    path('aboutPage/',include('second_app.urls'))
+    path('aboutPage/', include('second_app.urls'))
 ]

@@ -1,5 +1,36 @@
-{% extends 'base.html' %}
-<!-- {% load static %} -->
-{% block content%}
-<h1 class="text-center">About page</h1>
+{% extends 'base.html' %} {% load static %} {% block content%}
+
+<div class="about-section">
+  <h2>About Us</h2>
+  <p>
+    Welcome to Bengali Bon Appétit, where we bring the authentic flavors of
+    Bengal to your table. Our chefs are passionate about delivering a culinary
+    experience that captures the essence of Bengali cuisine. From delectable
+    sweets to savory dishes, each bite is a journey through the rich and diverse
+    culinary heritage of Bengal.
+  </p>
+
+  <div class="extra-info">
+    <h3>Our Mission</h3>
+    <p>
+      At Bengali Bon Appétit, our mission is to share the love for Bengali
+      cuisine with the world. We strive to create memorable dining experiences
+      that celebrate the unique flavors and traditions of Bengal.
+    </p>
+
+    <h3>Our Team</h3>
+    <p>
+      Meet our dedicated team of chefs and staff who are committed to delivering
+      exceptional culinary delights. Each member of our team brings a passion
+      for food and a commitment to ensuring your dining experience is nothing
+      short of extraordinary.
+    </p>
+  </div>
+</div>
+
+<div class="text-center">
+  <img src="{% static 'images/about.jpg' %}" class="img-fluid" alt="Banner" />
+</div>
+
+<link rel="stylesheet" href="{% static 'css/index.css' %}" />
 {% endblock %}

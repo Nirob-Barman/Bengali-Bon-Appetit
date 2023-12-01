@@ -1,24 +1,28 @@
-{% extends 'base.html' %}
-{% block content %}
+{% extends 'base.html' %} {% block content %}
 
-<h1 class="text-center">Inside App</h1>
-<p class="text-center">Number of meals: {{meals.categories | length}}</p>
+<h1 class="text-center">Number of meals: {{meals.categories | length}}</h1>
 
 <div class="container">
-    <div class="row">
-        {% for i in meals.categories %}
-        <div class="col-sm-4">
-            <div class="card" style="width: 18rem;">
-                <img src={{i.strCategoryThumb}} class="img-fluid img-thumbnail" alt={{i.strCategory}}>
-                <div class="card-body">
-                    <h5 class="card-title">{{i.strCategory}}</h5>
-                    <p class="card-text">{{i.strCategoryDescription | truncatewords:20}}</p>
-                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                </div>
-            </div>
+  <div class="row">
+    {% for i in meals.categories %}
+    <div class="col-sm-4">
+      <div class="card" style="width: 18rem">
+        <img
+          src="{{i.strCategoryThumb}}"
+          class="img-fluid img-thumbnail"
+          alt="{{i.strCategory}}"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{i.strCategory}}</h5>
+          <p class="card-text">
+            {{i.strCategoryDescription | truncatewords:10}}
+          </p>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
         </div>
-        {% endfor %}
+      </div>
     </div>
+    {% endfor %}
+  </div>
 </div>
 
 {% endblock %}
