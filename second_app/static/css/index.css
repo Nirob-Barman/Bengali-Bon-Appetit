@@ -1,7 +1,12 @@
 body {
-    background-color: rgb(237, 237, 245);
+    /* background-color: rgb(237, 237, 245); */
+    background-color: rgb(41, 41, 158);
 }
 
 .about-section{
     text-align: center;
 }
+/* 
+#about-page{
+    background-color: black;
+} */
