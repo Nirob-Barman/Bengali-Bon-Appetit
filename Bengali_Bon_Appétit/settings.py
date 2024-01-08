@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = [
-    'https://bengali-bon-appetit.onrender.com/', 'https://*.127.0.0.1']
+    'https://bengali-bon-appetit.onrender.com', 'https://*.127.0.0.1']
 
 # Application definition
 
